@@ -1,0 +1,82 @@
+body {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+@media screen and (min-width: 832px) {
+    body {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        line-height: 1.2;
+    }
+}
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.6;
+}
+h2 {
+    margin-top: 2em;
+}
+h3 {
+    margin-bottom: -0.2em;
+    margin-top: 2em;
+}
+li {
+    margin: 0.8rem 0;
+}
+p,
+a,
+li {
+    line-height: 1.4rem;
+}
+code {
+    font-family: Inconsolata, Consolas, monospace;
+}
+footer {
+    margin-top: 4rem;
+    text-align: right;
+}
+.output {
+    background-color: #f0f0f0;
+    border-radius: 0.75em;
+    display: block;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.highlight {
+    border-radius: 0.75em;
+    border: 1px solid #f0f0f0;
+    display: block;
+    margin: 0.5em;
+    overflow-x: auto;
+    padding: 0.5em;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+a::before {
+    z-index: -1;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: #73B4DCAf;
+    transition: all 100ms linear;
+}
+
+a:hover::before {
+    height: 60%;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

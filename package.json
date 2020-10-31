@@ -1,0 +1,23 @@
+{
+  "name": "joe223.github.io",
+  "version": "1.0.0",
+  "description": "Joe's homepage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel -p 1234 ./src/index.html",
+    "build": "npx parcel ./src/index.html -d ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe223/joe223.github.io.git"
+  },
+  "author": "joe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joe223/joe223.github.io/issues"
+  },
+  "homepage": "https://github.com/joe223/joe223.github.io#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

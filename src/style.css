@@ -1,16 +1,21 @@
 body {
     background-color: #ffffff;
     box-sizing: border-box;
-    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
 }
 @media screen and (min-width: 832px) {
     body {
         width: 800px;
         margin: 0 auto;
     }
+
+    h1 {
+        line-height: 1.2;
+    }
 }
 h1 {
     font-size: 2.4rem;
+    line-height: 1.6;
 }
 h2 {
     margin-top: 2em;
@@ -49,4 +54,26 @@ footer {
     overflow-x: auto;
     padding: 0.5em;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    display: inline-block;
+}
 
+a::before {
+    z-index: -1;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: #73B4DCAf;
+    transition: all 100ms linear;
+}
+
+a:hover::before {
+    height: 60%;
+}
