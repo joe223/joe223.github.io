@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../.npm/_npx/12067/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../.npm/_npx/12067/lib/node_modules/parcel/src/builtins/css-loader.js"}],"../../../.npm/_npx/13256/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../.npm/_npx/12067/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"../../../.npm/_npx/13256/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +389,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../.npm/_npx/13256/lib/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/style.e308ff8e.js.map
+//# sourceMappingURL=/index.js.map
