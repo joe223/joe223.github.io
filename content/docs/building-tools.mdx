@@ -1,0 +1,52 @@
+---
+title: Building Tools for Developers
+date: 2026-03-15
+---
+
+Why I focus on developer tools, and what I've learned from building **tiny-swiper**, **anka**, and other projects.
+
+## The Philosophy
+
+Developer tools should:
+
+1. Solve a *real* problem you've experienced
+2. Be simple enough to understand in 5 minutes
+3. Work reliably without surprises
+4. Not require extensive configuration
+
+> "The best tool is the one you don't have to think about."
+
+## tiny-swiper
+
+A lightweight carousel library. The idea came from frustration with existing solutions that were either too heavy or too opinionated.
+
+```typescript
+import TinySwiper from 'tiny-swiper';
+
+const swiper = new TinySwiper('.container', {
+  autoplay: true,
+  loop: true,
+});
+```
+
+Key decisions:
+
+- Core is under 2KB
+- Plugins are optional
+- No styling included—you control the look
+
+### Comparison
+
+| Library | Size | Features |
+|---------|------|----------|
+| tiny-swiper | 2KB | Minimal |
+| Swiper | 80KB | Full |
+| Slick | 40KB | Medium |
+
+## What's Next
+
+AriaType continues this philosophy: a voice keyboard that's private, fast, and doesn't require setup.
+
+![AriaType Demo](https://raw.githubusercontent.com/joe223/AriaType/master/assets/showcase-0.3.png)
+
+Check out the [GitHub repo](https://github.com/joe223/AriaType) if you're curious.

@@ -2,10 +2,10 @@
   "name": "joe223.github.io",
   "version": "1.0.0",
   "description": "Joe's homepage",
-  "main": "index.js",
   "scripts": {
-    "dev": "npx parcel -p 1234 ./src/index.html",
-    "build": "npx parcel ./src/index.html -d ./docs"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,18 @@
     "url": "https://github.com/joe223/joe223.github.io/issues"
   },
   "homepage": "https://github.com/joe223/joe223.github.io#readme",
+  "keywords": [],
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel": "^1.12.4"
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "typescript": "^6.0.3"
   }
 }
