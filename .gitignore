@@ -6,3 +6,4 @@ package-lock.json
 dist
 .cache
 .next
+docs/dev/cache

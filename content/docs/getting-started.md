@@ -5,8 +5,6 @@ date: 2026-03-22
 
 AriaType is a local-first voice keyboard for macOS. Here's how to set it up and start using it in your daily workflow.
 
-![AriaType](https://raw.githubusercontent.com/joe223/AriaType/master/assets/showcase-0.3.png)
-
 ## Installation
 
 Download from [ariatype.com](https://ariatype.com) or check the source on [GitHub](https://github.com/joe223/AriaType). Install the app, and grant the required permissions. That's it—no account needed.
