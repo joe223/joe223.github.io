@@ -1,6 +1,6 @@
 ---
 title: Getting Started with AriaType
-date: 2026-04-25
+date: 2026-03-22
 ---
 
 AriaType is a local-first voice keyboard for macOS. Here's how to set it up and start using it in your daily workflow.

@@ -48,19 +48,6 @@ export default function Home() {
           <a href="https://lobste.rs/~JoeHarris">Lobsters</a>
         </nav>
       </section>
-
-      <section className="artwork">
-        <h2>Miscellaneous</h2>
-        <p className="intro">
-          I want to share a painting I've been looking at lately. It shows the
-          power of nature and the resilience of people struggling against it.
-          Something about it encourages me.
-        </p>
-        <figure>
-          <img src="/110136bdx.jpg" alt="Fishermen at Sea by J.M.W. Turner" />
-          <figcaption>Fishermen at Sea — J.M.W. Turner, 1796</figcaption>
-        </figure>
-      </section>
     </main>
     </>
   );
