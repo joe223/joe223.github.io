@@ -156,6 +156,10 @@ a:hover::after {
   text-decoration: underline;
 }
 
+.app-link {
+  white-space: nowrap;
+}
+
 .inline-logo {
   display: inline;
   vertical-align: -0.25em;

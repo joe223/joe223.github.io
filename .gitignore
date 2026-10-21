@@ -7,3 +7,26 @@ dist
 .cache
 .next
 docs/dev/cache
+
+# Local compiler/build caches; keep docs/ and docs/_next/static for GitHub Pages.
+*.tsbuildinfo
+.turbo/
+.vercel/
+/docs/cache/
+/docs/diagnostics/
+/docs/trace
+/docs/trace-build
+
+# Local configuration, logs and private signing material.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.log
+*.p8
+*.p12
+*.pfx
+*.key
+*.pem
+*.mobileprovision
+*.provisionprofile
