@@ -1,0 +1,42 @@
+/* App pages only. The current homepage export omits its font import and renders Georgia.
+   Match that live fallback and its layout without modifying homepage CSS or assets. */
+:root{color-scheme:light;--color-text:#111;--color-muted:#444;--color-link:#111;--color-accent:#c41e3a;--spacing-unit:.25rem;--spacing-xs:.5rem;--spacing-sm:1rem;--spacing-md:1.5rem;--spacing-lg:2.5rem}
+*{box-sizing:border-box;margin:0;padding:0}
+::selection{background:rgba(196,30,58,.1)}
+html{font-size:16px;scroll-padding-top:1.5rem}
+body{font-family:Georgia,'Times New Roman',serif;font-size:1.125rem;line-height:1.6;color:var(--color-text);background:#fefefe;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+a{color:var(--color-link);text-decoration:none;font-style:italic;position:relative;text-underline-offset:.18em}
+a:hover{text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:#999}
+a:focus-visible,select:focus-visible{outline:2px solid var(--color-accent);outline-offset:4px}
+.site-nav{max-width:50rem;margin:var(--spacing-lg) auto;padding:0 1rem var(--spacing-lg);display:flex;justify-content:space-between;align-items:baseline;font-size:1.5rem;letter-spacing:.01em}
+.site-nav a{font-size:1.25rem;font-style:normal}
+.site-nav .nav-home{font-size:1.35rem;font-weight:600;font-style:italic;color:#fff;background:#1a1a1a;padding:.15rem .75rem;border-radius:0}
+.nav-home:hover{text-decoration:none}
+main,.site-footer{max-width:50rem;margin:var(--spacing-lg) auto;padding:0 1rem}
+.app-nav{display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;padding:var(--spacing-md) 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.app-name{font-weight:600;font-style:normal;letter-spacing:-.01em}
+.app-links{display:flex;align-items:baseline;gap:1.5rem;flex-wrap:wrap}
+.app-links a{font-size:1rem;font-style:normal;color:var(--color-muted)}
+.app-links a[aria-current=page]{color:var(--color-text);text-decoration:underline;text-decoration-color:#bbb}
+.language-label{display:flex;align-items:baseline;gap:.4rem;font-size:.875rem;color:#666}
+select{font:inherit;line-height:1.6;max-width:10rem;color:var(--color-muted);background:transparent;border:0;border-bottom:1px solid #ddd;border-radius:0;padding:.15rem 1.2rem .15rem .15rem;cursor:pointer}
+.doc-header{padding-top:var(--spacing-md);padding-bottom:var(--spacing-md)}
+h1{font-size:2rem;font-weight:600;line-height:1.2;letter-spacing:-.02em;margin:0 0 .5rem}
+.intro{color:var(--color-muted);font-size:1.125rem;line-height:1.65;margin-bottom:1.25rem}
+.meta{font-size:.875rem;color:#888;margin-top:.5rem}
+.doc-content{padding-top:var(--spacing-sm)}
+.doc-content section{margin:0 0 2.25rem}
+h2{font-size:1.35rem;font-weight:600;line-height:1.4;letter-spacing:-.01em;margin-bottom:var(--spacing-sm)}
+p{color:var(--color-muted);font-size:1.0625rem;line-height:1.65;margin-bottom:1rem;overflow-wrap:anywhere;text-align:justify}
+.doc-content a{text-decoration:underline}
+.artwork{margin:var(--spacing-md) 0 2rem}
+.hero{display:block;width:100%;height:auto;border-radius:.5rem}
+.contact{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,.06)}
+.contact h2{font-size:.8125rem;font-weight:500;text-transform:uppercase;color:#666}
+.contact a{font-size:1.25rem}
+.site-footer{border-top:1px solid rgba(0,0,0,.06);padding-top:1.5rem;padding-bottom:2.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:#888;font-size:.875rem}
+.site-footer a{color:#666}
+.skip-link{position:absolute;top:.5rem;left:.5rem;transform:translateY(-200%);background:#fefefe;padding:.25rem .5rem;z-index:1}
+.skip-link:focus{transform:none}
+@media(max-width:620px){.app-nav{align-items:flex-start;flex-direction:column;gap:1rem}.app-links{gap:1rem}.app-links a{font-size:.9375rem}.doc-content p{text-align:left}.site-nav{margin:1.5rem auto;padding-bottom:1.5rem}main{margin:1.5rem auto}.site-footer{margin-top:2.5rem}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
